@@ -1,0 +1,345 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Optional: just to hide the scrollbar track */
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.page-wrap, .mapboxgl-map, .nav-wrap {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 38px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+p {
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #424242;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+ul {
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #424242;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.features {
+    position: relative;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    width: 48vw;
+    margin-right: 0;
+    margin-left: 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 0 0 auto;
+}
+.section-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.section.section-last {
+    margin-bottom: 70vh;
+}
+
+.section.active {
+    opacity: 1;
+}
+
+.body {
+    color: #000;
+    padding: 0;
+}
+
+.map {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+}
+
+.heading {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    font-family: Oswald, sans-serif;
+    color: #000;
+    font-size: 29px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.page-wrap {
+    position: relative;
+    display: block;
+    overflow: visible;
+}
+
+.section__inner-wrap {
+    display: flex;
+    height: 100vh;
+    padding: 25px 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.intro-section {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.intro-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Oswald, sans-serif;
+    color: #000;
+    font-size: 40px;
+    line-height: 57px;
+}
+
+.footer-wrap {
+    position: relative;
+    width: 100%;
+    height: 0vh;
+}
+
+.number-span {
+    position: relative;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    padding-right: 0;
+    opacity: 0.2;
+    font-family: Oswald, sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.nav-wrap {
+    position: fixed;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    width: 5vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__inner-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    width: 12px;
+    height: 12px;
+    margin-bottom: 12px;
+    flex: 0 0 auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    transition: all 100ms ease;
+}
+
+.nav-item:hover {
+    background-color: #000;
+}
+
+.nav-item.w--current {
+    border-color: #000;
+    background-color: #000;
+}
+
+.number {
+    margin-right: 8px;
+    flex: 0 0 auto;
+    opacity: 0.3;
+}
+
+.intro__sub-title {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.tier-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tier-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tier-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.tier-color--green-dark {
+    background-color: #006400; /* Dark Green */
+}
+
+.tier-color--green-light {
+    background-color: #98FB98; /* Light Green */
+}
+
+.tier-color--yellow {
+    background-color: #FFFF00; /* Yellow */
+}
+
+.tier-color--orange {
+    background-color: #FFA500; /* Orange */
+}
+
+.tier-color--red {
+    background-color: #FF0000; /* Red */
+}
+
+@media (max-width: 991px) {
+    .features {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        overflow-y: visible;
+    }
+
+    .map {
+        left: 0;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .page-wrap {
+        display: block;
+    }
+
+    .section__inner-wrap {
+        height: auto;
+        padding: 15px;
+    }
+
+    .footer-wrap {
+        height: 50vh;
+    }
+
+    .nav-wrap {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        bottom: 10px; /* Position at the bottom */
+        top: auto; /* Override top position */
+    }
+
+    .nav__inner-wrap {
+        flex-direction: row;
+    }
+
+    .nav-item {
+        margin: 5px;
+    }
+
+    .intro-section {
+        height: auto;
+        padding: 15px;
+    }
+
+    .intro-title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 24px;
+    }
+
+    .intro-title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .section__inner-wrap {
+        padding: 10px;
+    }
+
+    .section {
+        align-items: center;
+    }
+
+    .nav-wrap {
+        padding-top: 10vh;
+    }
+}

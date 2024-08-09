@@ -1,0 +1,17 @@
+{
+    "fenicia": {
+        "title": "Fenicia",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+        "image": "../assets/img/fenicia.png"
+    },
+    "rincon-persa": {
+        "title": "Rincon Persa",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+        "image": "../assets/img/rincon-persa.png"
+    },
+    "cafe-arabia": {
+        "title": "Cafe Arabia",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+        "image": "../assets/img/cafe-arabia.png"
+    }
+}

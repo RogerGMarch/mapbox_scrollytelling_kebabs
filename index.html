@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapbox Scrollytelling</title>
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" />
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css" />
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="apple-touch-icon" href="https://assets.website-files.com/img/webclip.png">
+    <style>
+        .mapboxgl-canvas {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        .mapboxgl-canvas:focus {
+            outline: none;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Oswald:200,300,400,500,600,700"]
+            }
+        });
+    </script>
+</head>
+<body class="body">
+    <div class="page-wrap">
+        <div id="map" class="map"></div>
+        <div class="nav-wrap">
+            <nav class="nav__inner-wrap">
+                <a href="#features" class="nav-item w-inline-block" id="features-button"></a>
+                <a href="#fenicia" class="nav-item w-inline-block" id="fenicia-button"></a>
+                <a href="#rincon-persa" class="nav-item w-inline-block" id="rincon-persa-button"></a>
+                <a href="#cafe-arabia" class="nav-item w-inline-block" id="cafe-arabia-button"></a>
+                <!-- Add more chapter buttons as needed -->
+            </nav>
+        </div>
+        <div id="features" class="features">
+            <div class="intro-section">
+                <h1 class="intro-title">We created the ultimate tier list of Kebabs from Barcelona</h1>
+                <p class="intro__sub-title">Welcome to our ultimate guide to the best kebab shops in Barcelona! We’ve explored the city, tasted countless kebabs, and created a tier list to help you find the perfect spot. Using a blend of customer reviews, our personal experiences, and a few secret ingredients, we've ranked each shop to bring you the most delicious and authentic kebabs Barcelona has to offer.
+
+                    Dive into our interactive map and start your culinary adventure through the vibrant streets of Barcelona.</p>
+            </div>
+
+            <div class="intro-section">
+                <h2 class="heading">Understanding Our Tier List</h2>
+                <p class="intro__sub-title">We've categorized each kebab shop into different tiers, represented by colored round points on the map:</p>
+                <ul class="tier-list">
+                    <li><span class="tier-color tier-color--green-dark"></span> <strong>Kebabtastic:</strong> The best of the best, offering an exceptional kebab experience.</li>
+                    <li><span class="tier-color tier-color--green-light"></span> <strong>Kebabtastic:</strong> Great quality kebabs, highly recommended.</li>
+                    <li><span class="tier-color tier-color--yellow"></span> <strong>Meh-bab:</strong> Decent kebabs, worth a try if you're nearby.</li>
+                    <li><span class="tier-color tier-color--orange"></span> <strong>Falafail:</strong> Needs improvement, with room for growth.</li>
+                    <li><span class="tier-color tier-color--red"></span> <strong>Kebabocalypse:</strong> Not recommended, needs significant improvement.</li>
+                </ul>
+            </div>
+            
+            <!-- Sections will be loaded here -->
+        </div>
+    </div>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+    <script src="src/map.js"></script>
+    <script src="src/scroll.js"></script>
+    <script src="src/load-sections.js"></script>
+</body>
+</html>

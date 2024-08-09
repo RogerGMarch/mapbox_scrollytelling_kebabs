@@ -1,0 +1,33 @@
+{
+    "intro": {
+        "duration": 5000,
+        "center": [2.146410201790235,  41.37702291864907],
+        "bearing": 27,
+        "zoom": 12,
+        "pitch": 80
+    },
+
+    "fenicia": {
+        "duration": 5000,
+        "center": [2.136410201790235,  41.37702291864907],
+        "bearing": 27,
+        "zoom": 17.5,
+        "pitch": 80
+    },
+ 
+    "rincon-persa": {
+        "bearing": 90,
+        "duration": 5000,
+        "center": [2.1592499961289437,   41.37931337437042],
+        "zoom": 17,
+        "pitch": 60
+    },
+
+    "cafe-arabia": {
+        "bearing": 90,
+        "duration": 5000,
+        "center": [2.176243416423111,    41.37966165106484],
+        "zoom": 16
+    }
+
+}
